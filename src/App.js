@@ -6,17 +6,20 @@ import SuggessioVedio from "./Components/SuggessioVedio";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBare from "./Components/NavBare";
 import MainVedio from "./Components/MainVedio";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Components/Style.css"
 import { DataComm, dataVed } from "./Components/DataCommentaire";
 import { Col, Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
-
+import useMiddleware from './middleware';
 
 
 function App() {
+  useMiddleware();
+
 const [commentaires, setCommentaires] =  useState(DataComm);
 const [vedio, setVedio] = useState(dataVed)
+
   const handelAdd = (newText) => {
     let newAction = {imgs: "https://yt3.ggpht.com/ytc/AKedOLTksCvRHRkQybOPPFMN2LawgVt3a7NhXmogEw=s88-c-k-c0x00ffffff-no-rj",
          name: "D.R. Just",
@@ -41,18 +44,27 @@ const [vedio, setVedio] = useState(dataVed)
         };
         setVedio([...vedio, newVed]);
   };
+// Exemple avec fetch dans un composant React
+
+
+// Fonction pour envoyer les détails de la requête au serveur
+
+
   return (
     <div className="App" >
       <NavBare />
     
       <Row style={{ marginLeft: 100, marginRight: 20 }} >
-        
+
         <Col xs={12} md={8}>
           <MainVedio  />
           <Comments add={handelAdd}commentair={commentaires} />
+
+     
         </Col>
         <Col md={4} xs={6}>
         <SuggessioVedio listVedio={vedio} addv={handelAddVed}/>
+
       </Col>
       
     </Row>

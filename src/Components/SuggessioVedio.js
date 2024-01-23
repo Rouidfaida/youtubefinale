@@ -119,7 +119,6 @@ const SuggessioVedio = ({ listVedio, addv }) => {
           <Button
             variant="primary"
             onClick={handleClose}
-            onClick={handleSubmit}
           >
             Save{" "}
           </Button>{" "}
