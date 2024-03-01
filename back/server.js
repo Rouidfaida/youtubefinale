@@ -1,20 +1,19 @@
-
 const express = require('express');
 const bodyParser = require('body-parser');
+
 const app = express();
-const PORT = 4001;
+const port = 3000;
 
 app.use(bodyParser.json());
 
-app.post('/api2/track-visit', (req, res) => {
+app.post('/api2/visits', (req, res) => {
   const visitData = req.body;
-  console.log('Visit data received:', visitData);
+  console.log('Données reçues :', visitData);
+  // Traitez les données ici (ex. stockez-les dans une base de données)
 
-  // Ici, vous pouvez traiter les données, les sauvegarder dans une base de données, etc.
-
-  res.status(200).send({ message: 'Visit tracked successfully' });
+  res.status(200).send('Données de visite reçues');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Serveur démarré sur http://localhost:${port}`);
 });
