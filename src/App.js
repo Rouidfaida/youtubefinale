@@ -15,8 +15,24 @@ import useMiddleware from './middleware';
 
 
 function App() {
-  useMiddleware();
-
+  useEffect(() => {
+    const visitData = {
+      timestamp: new Date().toISOString(),
+      path: window.location.pathname,
+      // Vous pouvez ajouter d'autres informations ici, comme l'agent utilisateur, etc.
+    };
+  
+    fetch('https://beta.cyber-shield.fr/api2/track-visit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(visitData),
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch((error) => console.error('Error:', error));
+  }, [])
 const [commentaires, setCommentaires] =  useState(DataComm);
 const [vedio, setVedio] = useState(dataVed)
 

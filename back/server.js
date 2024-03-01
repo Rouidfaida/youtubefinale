@@ -6,7 +6,7 @@ const PORT = 4001;
 
 app.use(bodyParser.json());
 
-app.post('/track-visit', (req, res) => {
+app.post('/api2/track-visit', (req, res) => {
   const visitData = req.body;
   console.log('Visit data received:', visitData);
 
