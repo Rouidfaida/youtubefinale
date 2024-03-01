@@ -91,7 +91,17 @@ app.post('/api2/visits', (req, res) => {
 console.log('errrr',res)
 console.log('tyyyyy',req)})
 
-  
+  // Middleware pour ajouter des en-têtes de réponse
+app.use((req, res, next) => {
+  // Sécurité: Empêcher le navigateur d'interpréter les fichiers comme autre chose que leur type MIME déclaré
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  // Sécurité: Cliquer sur la protection de détournement
+  res.setHeader('X-Frame-Options', 'sameorigin');
+  // CSP: Définir une politique de sécurité du contenu
+  res.setHeader('X-Powered-By', 'SECURAS');
+
+  next();
+});
 // Chargement des modules, enregistrement, puis démarrage du serveur
 async function initializeServer() {
     try {
