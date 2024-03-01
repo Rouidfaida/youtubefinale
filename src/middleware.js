@@ -10,7 +10,7 @@ export default function useMiddleware() {
         const queryString = window.location.search; // Capture la query string
 
         const visitData = {
-          timestamp: new Date().toISOString(),
+          // timestamp: new Date().toISOString(),
           method: 'GET', // Vous pouvez utiliser 'GET' ou 'POST' en fonction de vos besoins
           
           path: window.location.pathname,
