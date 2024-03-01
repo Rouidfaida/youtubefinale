@@ -91,6 +91,9 @@ app.post('/api2/visits', (req, res) => {
 // console.log('errrr',res)
 // console.log('tyyyyy',req)
 })
+app.use(express.static('build')); // Servir les fichiers statiques de React sans les en-têtes spécifiques à l'API
+
+// Puis, définissez les middlewares spécifiques à l'API comme montré précédemment
 
   // Middleware pour ajouter des en-têtes de réponse
 app.use((req, res, next) => {
