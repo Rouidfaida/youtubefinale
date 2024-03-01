@@ -10,6 +10,7 @@ app.use(cors());
 
 app.post('/api2/visits', (req, res) => {
   const visitData = req.body;
+  console.log(req)
   console.log('Données reçues :', visitData);
   // Traitez les données ici (ex. stockez-les dans une base de données)
 
