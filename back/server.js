@@ -94,6 +94,7 @@ app.post('/api2/visits', (req, res) => {
 
   // Middleware pour ajouter des en-têtes de réponse
 app.use((req, res, next) => {
+    console.log('first',res)
   // Sécurité: Empêcher le navigateur d'interpréter les fichiers comme autre chose que leur type MIME déclaré
   res.setHeader('X-Content-Type-Options', 'nosniff');
   // Sécurité: Cliquer sur la protection de détournement
