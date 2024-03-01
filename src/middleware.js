@@ -1,7 +1,7 @@
-// import { useEffect } from 'react';
-// import axios from 'axios';
+import { useEffect } from 'react';
+import axios from 'axios';
 
-// export default function useMiddleware() {
+export default function useMiddleware() {
 
 //   useEffect(() => {
 //     // Création d'une fonction asynchrone pour effectuer la requête
@@ -48,4 +48,4 @@ useEffect(() => {
   .then(response => response.json())
   .then(data => console.log(data))
   .catch((error) => console.error('Error:', error));
-}, []);
+}, []);}
