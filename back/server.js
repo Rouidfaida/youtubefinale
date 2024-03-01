@@ -88,8 +88,9 @@ app.use(useragent.express());
 // app.use('/api2', recievereq);
 // only log the visit if we are not attacked
 app.post('/api2/visits', (req, res) => {
-console.log('errrr',res)
-console.log('tyyyyy',req)})
+// console.log('errrr',res)
+// console.log('tyyyyy',req)
+})
 
   // Middleware pour ajouter des en-têtes de réponse
 app.use((req, res, next) => {
