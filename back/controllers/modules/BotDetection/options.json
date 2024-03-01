@@ -1,0 +1,44 @@
+[
+    {
+        "module_id": "4",
+        "name": "detect_bots",
+        "display_name": "Activer la détection des bots",
+        "description": "Activer ou désactiver la détection des bots",
+        "value": true
+    },
+    {
+        "module_id": "4",
+        "name": "allow_search_bots",
+        "display_name":  "Whitelist des bots d'indexation",
+        "description": "Il n'est pas recommandé de bloquer l'accès des bots des moteurs de recherche à votre site",
+        "value": true
+    },
+    {
+        "module_id": "4",
+        "name": "bad_bots",
+        "display_name": "Détecter les bots",
+        "description": "Détecte les bots et bloque leur accès au site",
+        "value": true
+    },
+    {
+        "module_id": "4",
+        "name": "c_bot_log",
+        "display_name": "Activer le log de ce type de menaces",
+        "description": "Enregistrer dans le log",
+        "value": true
+    },
+    {
+        "module_id": "4",
+        "name": "c_bot_autoban",
+        "display_name": "Auto banir s'il y'a une menace de ce type",
+        "description": "Auto bannir le visiteur",
+        "value": true
+    },
+    {
+        "module_id": "4",
+        "name": "c_bot_email_notif",
+        "display_name": "Activer la notification par e-mail pour ce type de menaces",
+        "description": "Recevoir une notification par e-mail",
+        "value": true
+    }
+]

@@ -1,0 +1,79 @@
+ [
+    {
+        "module_id": "1",
+        "name": "sqli_protection",
+        "display_name": "Injection SQL",
+        "description": "Détecter les attaques de type injection SQL",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "xss_protection",
+       "display_name" :"Protection XSS",
+        "description": "Détecter les attaques de type XSS",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "clickjacking_protection",
+        "display_name": "Protection clickjacking",
+        "description": "Détecter et bloquer les tentatives de clickjacking",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "mimemis_protection",
+        "display_name": "Protection contre les attaques MIME Mismatch",
+        "description": "Empêche les attaques basées sur une incompatibilité de type MIME",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "force_secure_conn",
+        "display_name": "Connexion sécurisée",
+        "description": "Force le site Web à utiliser une connexion sécurisée (HTTPS)",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "hide_php_ver",
+        "display_name": "Masquer les informations PHP",
+        "description": "Cacher la version de PHP pour les requêtes distantes",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "sanitize_input",
+        "display_name": "Filtrage des données",
+        "description": "Désinfection de base de tous les champs, entrées, formulaires et demandes. Faible sensibilité mais performance plus rapide.",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "sanitize_data",
+        "display_name": "Sanitisation des requêtes",
+        "description": "Analyse avancée de tous les champs, entrées, formulaires et demandes. Haute sensibilité mais performance plus lente.",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "c_sqli_log",
+        "display_name": "Activer le log de ce type de menaces",
+        "description": "Enregistrer dans le log",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "c_sqli_autoban",
+        "display_name": "Auto-bannir en cas de menace de ce type",
+        "description": "Auto-bannir le visiteur",
+        "value": true
+      },
+      {
+        "module_id": "1",
+        "name": "c_sqli_email_notif",
+        "display_name": "Activer la notification par e-mail pour ce type de menaces",
+        "description": "Recevoir une notification par e-mail",
+        "value": true
+      }
+]

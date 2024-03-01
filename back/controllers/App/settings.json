@@ -1,0 +1,44 @@
+[
+    {
+        "module_id": "0",
+        "name": "email",
+        "display_name": "Votre E-mail",
+        "value":" ",
+        "type":"email"
+    },
+    {
+        "module_id": "0",
+        "name": "redirect_uri",
+        "display_name": "URL de redirection",
+        "value": "https://shield.securas.cloud/redirect",
+        "type": "uri"
+    },
+    {
+        "module_id": "0",
+        "name": "iphub_key",
+        "display_name": "Clé d'API IPHub",
+        "value": "",
+        "type": "text"
+    },
+    {
+        "module_id": "0",
+        "name": "proxycheck_key",
+        "display_name": "Clé d'API ProxyCheck",
+        "value": "",
+        "type": "text"
+    },
+    {
+        "module_id": "0",
+        "name": "iphunter_key",
+        "display_name": "Clé d'API IPHunter",
+        "value": "",
+        "type": "text"
+    },
+    {
+        "module_id": "0",
+        "name": "hibp_key",
+        "display_name": "Clé d'API Have I been Pwned",
+        "value": "",
+        "type": "text"
+    }
+]

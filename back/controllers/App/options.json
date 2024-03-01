@@ -1,0 +1,44 @@
+[
+    {
+        "module_id": "0",
+        "name": "settings_registered",
+        "display_name": "NI",
+        "description": "NI",
+        "value": true
+    },
+    {
+        "module_id": "0",
+        "name": "protect",
+        "display_name": "Protection temps réel",
+        "description": "Activer l'ensemble des modules de protection",
+        "value": true
+    },
+    {
+        "module_id": "0",
+        "name": "email_notif",
+        "display_name": "Notification E-mail",
+        "description": "Si cette option est activée, vous recevrez des notifications par e-mail",
+        "value": true
+    },
+    {
+        "module_id": "0",
+        "name": "log",
+        "display_name": "Log des menaces",
+        "description": "Log de tous les menaces détectées",
+        "value": true
+    },
+    {
+        "module_id": "0",
+        "name": "autoban",
+        "display_name": "Ban automatique",
+        "description": "Bannir automatiquement toutes les menaces",
+        "value": true
+    },
+    {
+        "module_id": "0",
+        "name": "ip_detect",
+        "display_name": "Détection IP",
+        "description": "La détection IP de base est activée par défaut, offrant des performances plus rapides mais une précision limitée. Si vous activez cette option, la détection IP avancée sera utilisée, offrant une haute précision de détection mais des performances plus lentes",
+        "value": true
+    }
+]

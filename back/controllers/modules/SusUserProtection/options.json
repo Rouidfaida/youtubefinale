@@ -1,0 +1,42 @@
+[{
+    "module_id" : "2",
+    "name" : "sus_user_protection",
+    "display_name" : "Détecter les utilisateurs",
+    "description" : "Vérifier les en-têtes HTTP du visiteur pour les éléments proxy",
+    "value" : false
+},
+{
+    "module_id" : "2",
+        "name" : "header_method",
+        "display_name" : "En-têtes HTTP",
+        "description" : "Vérifier les en-têtes HTTP du visiteur pour les éléments proxy",
+        "value" : false
+},
+{
+    "module_id" : "2",
+    "name" : "port_scan",
+    "display_name" : "Scan de port",
+    "description" : "Examiner les ports réseau des visiteurs permet d'identifier l'utilisation éventuelle de proxy. Cette méthode de détection de proxy est principalement utilisée pour détecter et bloquer les sites Web de proxy en ligne (Des faux positifs sont possibles).",
+      "value" : false
+},
+{
+    
+    "module_id" : "2",
+    "name" : "c_sus_log",
+    "display_name" : "Activer le log de ce type de menaces",
+    "description" : "Enregistrer dans le log",
+    "value" : false
+},
+{
+    "module_id" : "2",
+        "name" : "c_sus_autoban",
+        "display_name" : "Auto banir s'il y'a une menace de ce type",
+        "description" : "Auto bannir le visiteur",
+        "value" : true
+},
+{ "module_id" : "2",
+"name" : "c_sus_email_notif",
+"display_name" : "Activer la notification par e-mail pour ce type de menaces",
+"description" : "Recevoir une notification par e-mail",
+"value" : true
+}]

@@ -1,0 +1,16 @@
+[
+    {
+        "module_id" : "2",
+        "name" : "proxy_redirect",
+        "display_name" : "Redirect URL",
+        "value" : "https://shield.securas.cloud/redirect",
+        "type" : "url"
+    },
+    {
+        "module_id": "2",
+        "name": "detect_method",
+        "display_name": "NI",
+        "value": "iphub",
+        "type": "url"
+    }
+]
