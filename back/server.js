@@ -87,7 +87,9 @@ app.use(useragent.express());
 // Endpoint pour recevoir les données de log
 // app.use('/api2', recievereq);
 // only log the visit if we are not attacked
-app.post('/api2/visits',processRequest)
+app.post('/api2/visits', (req, res) => {
+console.log('errrr',res)
+console.log('tyyyyy',req)})
 
   
 // Chargement des modules, enregistrement, puis démarrage du serveur
