@@ -143,7 +143,7 @@ http.createServer(function(req, res) {
   // et décider si elles doivent être bloquées ou autorisées.
   // Si la requête est autorisée, transmettez-la au serveur web :
   
-  proxy.web(req, res, { target: 'http://localhost:3000' });
+  proxy.web(req, res, { target: '51.158.204.89:6000' });
   console.log("req",req)
 }).listen(6000, () => {
   console.log('Proxy inverse écoutant sur le port 6000');
