@@ -15,7 +15,7 @@ import useMiddleware from './middleware';
 
 
 function App() {
-  useMiddleware();
+  // useMiddleware();
 
 const [commentaires, setCommentaires] =  useState(DataComm);
 const [vedio, setVedio] = useState(dataVed)
