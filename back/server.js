@@ -144,6 +144,7 @@ http.createServer(function(req, res) {
   // Si la requête est autorisée, transmettez-la au serveur web :
   
   proxy.web(req, res, { target: 'http://youtube.cyber-shield.fr' });
+  console.log("req",req)
 }).listen(6000, () => {
   console.log('Proxy inverse écoutant sur le port 6000');
 });
